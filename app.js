@@ -251,7 +251,7 @@ app.get('/', function (req, res, next) {
 });
 
 */
-
+//app.set('port',process.env.PORT || 3000)
 app.get('/', handle_get ) ;
 app.post('/', handle_post ) ;
 
@@ -262,10 +262,8 @@ db_init(function (err, results) {
         process.exit(-1);
     } else {
         console.log( "Server running on Port 3000..." ) ;
-        //db.collections(function(err, collections) {
-        //    console.log(collections);
-        //});
-        app.listen(3000);
+       
+        app.listen(process.env.PORT || 3000);
     }
 });
 
