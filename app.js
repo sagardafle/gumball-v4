@@ -260,9 +260,9 @@ db_init(function (err, results) {
         console.error(err);
         process.exit(-1);
     } else {
-        console.log( "Server running on Port 3000..." ) ;
+        console.log( "Server running on Port 5000..." ) ;
        
-        app.listen(3000);
+        app.listen(process.env.PORT || 5000);
     }
 });
 
