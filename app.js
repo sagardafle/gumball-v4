@@ -58,7 +58,7 @@ var db_name = "db" ;
 var db_host = "ec2-52-53-194-251.us-west-1.compute.amazonaws.com" ;
 var db_port = "27017" ;
 
-var db_name = "test" ;
+var db_name = "admin" ;
 
    
 
@@ -137,7 +137,7 @@ var page = function( req, res, state, ts ) {
                 console.log( state ) ;
 
                 console.log(data);
-                count = data.gumballcount
+                count = data.countGumballs
                 console.log( "count = " + count ) ;
                 var msg =   "\n\nMighty Gumball, Inc.\n\nNodeJS-Enabled Standing Gumball\nModel# " + 
                             data.modelNumber + "\n" +
